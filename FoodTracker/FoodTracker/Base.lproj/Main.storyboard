@@ -42,6 +42,7 @@
                                     <outlet property="nameLabel" destination="wgb-Oe-xY3" id="9GW-lr-D1a"/>
                                     <outlet property="photoImageView" destination="dd0-CK-Amd" id="2II-V2-ib8"/>
                                     <outlet property="ratingControl" destination="pNz-im-OEb" id="rrT-za-aKT"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="ShowDetail" id="MQ2-z2-Cim"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -53,14 +54,14 @@
                     <navigationItem key="navigationItem" title="Your Meals" id="K5A-3C-H8L">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="MTf-jv-rEM">
                             <connections>
-                                <segue destination="h5V-H4-k2J" kind="show" id="TvC-dg-IFs"/>
+                                <segue destination="h5V-H4-k2J" kind="show" identifier="AddItem" id="TvC-dg-IFs"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sfv-UY-9yh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1339" y="450"/>
+            <point key="canvasLocation" x="1411" y="450"/>
         </scene>
         <!--New Meal-->
         <scene sceneID="tne-QT-ifu">
@@ -173,10 +174,13 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08V-D8-03O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2213" y="450"/>
+            <point key="canvasLocation" x="2187" y="818"/>
         </scene>
     </scenes>
     <resources>
         <image name="defaultPhoto" width="540" height="540"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="MQ2-z2-Cim"/>
+    </inferredMetricsTieBreakers>
 </document>
