@@ -21,7 +21,7 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Handle the tedt field's user input through delegate callbacks.
+        // Handle the text field's user input through delegate callbacks.
         nameTextField.delegate = self
         
         // Set up views if editing an existing meal.
@@ -99,14 +99,13 @@ class MealViewController: UIViewController, UITextFieldDelegate, UIImagePickerCo
     }
     
     func textFieldDidEndEditing(textField: UITextField) {
-        // Disable the Save button while editing.
-        saveButton.enabled = false
         checkValidMealName()
         navigationItem.title = textField.text
     }
     
     func checkValidMealName() {
         // Disable the Save button if the text field is empty
+        saveButton.enabled = false
         let text = nameTextField.text ?? ""
         saveButton.enabled = !text.isEmpty
     }
