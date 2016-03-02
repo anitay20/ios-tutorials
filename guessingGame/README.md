@@ -2,10 +2,6 @@
 
 App: guessingGame chooses a random number between 0 and 5 and has a user enter their guess. If they match, show a "Good job!", a like image and automatically make a new computer guess. If they don't, show "Nope it's not 3. Try again.", clear out the text field and dislike image.
 
-![image](https://github.com/anitay20/ios-tutorials/guessingGame/guessingGame.gif "guessingGame")
-
-
-
 What I learned:
 * Generate random int between 0 and 6 - ```Int(arc4random_uniform(6))```
 * Adding images from Assets.xcassets - ```elementName.image = UIImage(named: "name.png")```
