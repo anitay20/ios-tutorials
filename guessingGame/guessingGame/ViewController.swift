@@ -34,10 +34,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
             computerGuess = Int(arc4random_uniform(6))
             guesses = 0
         } else {
-            results.text = "Nope. Try again"
+            results.text = "Nope, it's not \(playerGuess.text!). Try again."
             image.image = UIImage(named: "dislike.png")
             guesses++
         }
+        playerGuess.text = nil
     }
     
     override func viewDidLoad() {
