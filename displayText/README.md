@@ -1,9 +1,16 @@
-Day 1
+# Day 1
 
+App: displayText displays the text that the user types in and the reset button returns the text to the original state. An added feature was to make the return key act like a button.
+
+![img](https://github.com/anitay20/ios-tutorials/displayText/displayText.gif "displayText")
+
+
+What I learned:
 * Adding Objects into the main storyboard: Label, text field, buttons
 * Interacting and updating elements on the page
 * Reset text, labels, everything on the page with a button.
-__To make the return key act as the OK being tapped:__
+
+__To make the return key act as the button being tapped:__
 Add ```UITextFieldDelegate``` and this in the ```ViewController``` file:
 
 ```swift
@@ -27,5 +34,6 @@ override func viewDidLoad() {
 ```
 
 __Questions:__ 
-1. Is there any way to simulate tapping the Ok button in performAction()? 
+
+**Is there any way to simulate tapping the submit button in performAction()?**
 Add the actions you want to perform in the performAction() function and in the button function, just call performAction().
