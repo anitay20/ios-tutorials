@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08A9D25B1C7550D00019AAF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A9D25A1C7550D00019AAF8 /* AppDelegate.swift */; };
+		08A9D25D1C7550D00019AAF8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A9D25C1C7550D00019AAF8 /* ViewController.swift */; };
+		08A9D2601C7550D00019AAF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A9D25E1C7550D00019AAF8 /* Main.storyboard */; };
+		08A9D2621C7550D00019AAF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A9D2611C7550D00019AAF8 /* Assets.xcassets */; };
+		08A9D2651C7550D00019AAF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08A9D2631C7550D00019AAF8 /* LaunchScreen.storyboard */; };
+		08A9D2701C7550D00019AAF8 /* PriceDropsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A9D26F1C7550D00019AAF8 /* PriceDropsTests.swift */; };
+		08A9D27B1C7550D00019AAF8 /* PriceDropsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A9D27A1C7550D00019AAF8 /* PriceDropsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08A9D26C1C7550D00019AAF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08A9D24F1C7550D00019AAF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08A9D2561C7550D00019AAF8;
+			remoteInfo = PriceDrops;
+		};
+		08A9D2771C7550D00019AAF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08A9D24F1C7550D00019AAF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08A9D2561C7550D00019AAF8;
+			remoteInfo = PriceDrops;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08A9D2571C7550D00019AAF8 /* PriceDrops.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriceDrops.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A9D25A1C7550D00019AAF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08A9D25C1C7550D00019AAF8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08A9D25F1C7550D00019AAF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08A9D2611C7550D00019AAF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08A9D2641C7550D00019AAF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08A9D2661C7550D00019AAF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08A9D26B1C7550D00019AAF8 /* PriceDropsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PriceDropsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A9D26F1C7550D00019AAF8 /* PriceDropsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceDropsTests.swift; sourceTree = "<group>"; };
+		08A9D2711C7550D00019AAF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08A9D2761C7550D00019AAF8 /* PriceDropsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PriceDropsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08A9D27A1C7550D00019AAF8 /* PriceDropsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceDropsUITests.swift; sourceTree = "<group>"; };
+		08A9D27C1C7550D00019AAF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08A9D2541C7550D00019AAF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A9D2681C7550D00019AAF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A9D2731C7550D00019AAF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08A9D24E1C7550D00019AAF8 = {
+			isa = PBXGroup;
+			children = (
+				08A9D2591C7550D00019AAF8 /* PriceDrops */,
+				08A9D26E1C7550D00019AAF8 /* PriceDropsTests */,
+				08A9D2791C7550D00019AAF8 /* PriceDropsUITests */,
+				08A9D2581C7550D00019AAF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08A9D2581C7550D00019AAF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08A9D2571C7550D00019AAF8 /* PriceDrops.app */,
+				08A9D26B1C7550D00019AAF8 /* PriceDropsTests.xctest */,
+				08A9D2761C7550D00019AAF8 /* PriceDropsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08A9D2591C7550D00019AAF8 /* PriceDrops */ = {
+			isa = PBXGroup;
+			children = (
+				08A9D25A1C7550D00019AAF8 /* AppDelegate.swift */,
+				08A9D25C1C7550D00019AAF8 /* ViewController.swift */,
+				08A9D25E1C7550D00019AAF8 /* Main.storyboard */,
+				08A9D2611C7550D00019AAF8 /* Assets.xcassets */,
+				08A9D2631C7550D00019AAF8 /* LaunchScreen.storyboard */,
+				08A9D2661C7550D00019AAF8 /* Info.plist */,
+			);
+			path = PriceDrops;
+			sourceTree = "<group>";
+		};
+		08A9D26E1C7550D00019AAF8 /* PriceDropsTests */ = {
+			isa = PBXGroup;
+			children = (
+				08A9D26F1C7550D00019AAF8 /* PriceDropsTests.swift */,
+				08A9D2711C7550D00019AAF8 /* Info.plist */,
+			);
+			path = PriceDropsTests;
+			sourceTree = "<group>";
+		};
+		08A9D2791C7550D00019AAF8 /* PriceDropsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08A9D27A1C7550D00019AAF8 /* PriceDropsUITests.swift */,
+				08A9D27C1C7550D00019AAF8 /* Info.plist */,
+			);
+			path = PriceDropsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08A9D2561C7550D00019AAF8 /* PriceDrops */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08A9D27F1C7550D00019AAF8 /* Build configuration list for PBXNativeTarget "PriceDrops" */;
+			buildPhases = (
+				08A9D2531C7550D00019AAF8 /* Sources */,
+				08A9D2541C7550D00019AAF8 /* Frameworks */,
+				08A9D2551C7550D00019AAF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PriceDrops;
+			productName = PriceDrops;
+			productReference = 08A9D2571C7550D00019AAF8 /* PriceDrops.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08A9D26A1C7550D00019AAF8 /* PriceDropsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08A9D2821C7550D00019AAF8 /* Build configuration list for PBXNativeTarget "PriceDropsTests" */;
+			buildPhases = (
+				08A9D2671C7550D00019AAF8 /* Sources */,
+				08A9D2681C7550D00019AAF8 /* Frameworks */,
+				08A9D2691C7550D00019AAF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08A9D26D1C7550D00019AAF8 /* PBXTargetDependency */,
+			);
+			name = PriceDropsTests;
+			productName = PriceDropsTests;
+			productReference = 08A9D26B1C7550D00019AAF8 /* PriceDropsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08A9D2751C7550D00019AAF8 /* PriceDropsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08A9D2851C7550D00019AAF8 /* Build configuration list for PBXNativeTarget "PriceDropsUITests" */;
+			buildPhases = (
+				08A9D2721C7550D00019AAF8 /* Sources */,
+				08A9D2731C7550D00019AAF8 /* Frameworks */,
+				08A9D2741C7550D00019AAF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08A9D2781C7550D00019AAF8 /* PBXTargetDependency */,
+			);
+			name = PriceDropsUITests;
+			productName = PriceDropsUITests;
+			productReference = 08A9D2761C7550D00019AAF8 /* PriceDropsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08A9D24F1C7550D00019AAF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Test;
+				TargetAttributes = {
+					08A9D2561C7550D00019AAF8 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					08A9D26A1C7550D00019AAF8 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 08A9D2561C7550D00019AAF8;
+					};
+					08A9D2751C7550D00019AAF8 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 08A9D2561C7550D00019AAF8;
+					};
+				};
+			};
+			buildConfigurationList = 08A9D2521C7550D00019AAF8 /* Build configuration list for PBXProject "PriceDrops" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08A9D24E1C7550D00019AAF8;
+			productRefGroup = 08A9D2581C7550D00019AAF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08A9D2561C7550D00019AAF8 /* PriceDrops */,
+				08A9D26A1C7550D00019AAF8 /* PriceDropsTests */,
+				08A9D2751C7550D00019AAF8 /* PriceDropsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08A9D2551C7550D00019AAF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A9D2651C7550D00019AAF8 /* LaunchScreen.storyboard in Resources */,
+				08A9D2621C7550D00019AAF8 /* Assets.xcassets in Resources */,
+				08A9D2601C7550D00019AAF8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A9D2691C7550D00019AAF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A9D2741C7550D00019AAF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08A9D2531C7550D00019AAF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A9D25D1C7550D00019AAF8 /* ViewController.swift in Sources */,
+				08A9D25B1C7550D00019AAF8 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A9D2671C7550D00019AAF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A9D2701C7550D00019AAF8 /* PriceDropsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08A9D2721C7550D00019AAF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08A9D27B1C7550D00019AAF8 /* PriceDropsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08A9D26D1C7550D00019AAF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08A9D2561C7550D00019AAF8 /* PriceDrops */;
+			targetProxy = 08A9D26C1C7550D00019AAF8 /* PBXContainerItemProxy */;
+		};
+		08A9D2781C7550D00019AAF8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08A9D2561C7550D00019AAF8 /* PriceDrops */;
+			targetProxy = 08A9D2771C7550D00019AAF8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08A9D25E1C7550D00019AAF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08A9D25F1C7550D00019AAF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08A9D2631C7550D00019AAF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08A9D2641C7550D00019AAF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08A9D27D1C7550D00019AAF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08A9D27E1C7550D00019AAF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08A9D2801C7550D00019AAF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PriceDrops/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.PriceDrops;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		08A9D2811C7550D00019AAF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PriceDrops/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.PriceDrops;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		08A9D2831C7550D00019AAF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PriceDropsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.PriceDropsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PriceDrops.app/PriceDrops";
+			};
+			name = Debug;
+		};
+		08A9D2841C7550D00019AAF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PriceDropsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.PriceDropsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PriceDrops.app/PriceDrops";
+			};
+			name = Release;
+		};
+		08A9D2861C7550D00019AAF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PriceDropsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.PriceDropsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PriceDrops;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		08A9D2871C7550D00019AAF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PriceDropsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = test.PriceDropsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PriceDrops;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08A9D2521C7550D00019AAF8 /* Build configuration list for PBXProject "PriceDrops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A9D27D1C7550D00019AAF8 /* Debug */,
+				08A9D27E1C7550D00019AAF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08A9D27F1C7550D00019AAF8 /* Build configuration list for PBXNativeTarget "PriceDrops" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A9D2801C7550D00019AAF8 /* Debug */,
+				08A9D2811C7550D00019AAF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		08A9D2821C7550D00019AAF8 /* Build configuration list for PBXNativeTarget "PriceDropsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A9D2831C7550D00019AAF8 /* Debug */,
+				08A9D2841C7550D00019AAF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		08A9D2851C7550D00019AAF8 /* Build configuration list for PBXNativeTarget "PriceDropsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08A9D2861C7550D00019AAF8 /* Debug */,
+				08A9D2871C7550D00019AAF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08A9D24F1C7550D00019AAF8 /* Project object */;
+}
