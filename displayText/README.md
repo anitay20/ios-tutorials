@@ -5,7 +5,6 @@ App: displayText displays the text that the user types in and the reset button r
 ![image](https://github.com/anitay20/ios-tutorials/displayText/displayText.gif "displayText")
 
 
-
 What I learned:
 * Adding Objects into the main storyboard: Label, text field, buttons
 * Interacting and updating elements on the page
