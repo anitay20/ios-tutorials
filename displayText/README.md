@@ -2,7 +2,8 @@
 
 App: displayText displays the text that the user types in and the reset button returns the text to the original state. An added feature was to make the return key act like a button.
 
-![img](https://github.com/anitay20/ios-tutorials/displayText/displayText.gif "displayText")
+![image](https://github.com/anitay20/ios-tutorials/displayText/displayText.gif "displayText")
+
 
 
 What I learned:
