@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  isItPrime?
+//  isItPrimeWithConstraints
 //
-//  Created by Anita Yeung on 3/2/16.
+//  Created by Anita Yeung on 3/9/16.
 //  Copyright © 2016 Test. All rights reserved.
 //
 
@@ -10,11 +10,17 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet weak var number: UITextField!
-    @IBOutlet weak var result: UILabel!
+    @IBOutlet weak var userInput: UITextField!
     @IBAction func submit(sender: UIButton) {
-//        number.resignFirstResponder()
         performAction()
+    }
+    @IBOutlet weak var result: UILabel!
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        self.userInput.delegate = self
     }
     
     func isPrime(num: Int) -> Bool {
@@ -29,12 +35,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         return isPrime
     }
     
-//    func textFieldShouldReturn(number: UITextField) -> Bool {
-//        number.resignFirstResponder()
-//        performAction()
-//        return true
-//    }
-    
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         self.view.endEditing(true)
         performAction()
@@ -42,20 +42,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func performAction() {
-        if isPrime(Int(number.text!)!) {
-            result.text = "\(number.text!) is a prime number"
+        if isPrime(Int(userInput.text!)!) {
+            result.text = "\(userInput.text!) is a prime number"
         } else {
-            result.text = "\(number.text!) is NOT a prime number"
+            result.text = "\(userInput.text!) is NOT a prime number"
         }
     }
-
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        self.number.delegate = self
-    }
-
+        
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
