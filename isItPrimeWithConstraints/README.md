@@ -1,4 +1,4 @@
-**isItPrimeWithConstraints* is pretty much the same as **isItPrime**, except that there is a simple error checker that makes sure there is something entered and it is a whole number. Also, this has autolayout using constraints, so it will work on any size screen.
+**isItPrimeWithConstraints** is pretty much the same as **isItPrime**, except that there is a simple error checker that makes sure there is something entered and it is a whole number. Also, this has autolayout using constraints, so it will work on any size screen.
 
 ![image](https://raw.githubusercontent.com/anitay20/ios-tutorials/master/isItPrimeWithConstraints/isItPrimeWithConstraints.gif)
 
