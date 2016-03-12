@@ -42,13 +42,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func performAction() {
-        if isPrime(Int(userInput.text!)!) {
-            result.text = "\(userInput.text!) is a prime number"
+        if let number = Int(userInput.text!) {
+            if isPrime(number) {
+                result.text = "\(userInput.text!) is a prime number"
+            } else {
+                result.text = "\(userInput.text!) is NOT a prime number"
+            }
         } else {
-            result.text = "\(userInput.text!) is NOT a prime number"
+            result.text = "Please enter a whole number"
         }
     }
-        
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
