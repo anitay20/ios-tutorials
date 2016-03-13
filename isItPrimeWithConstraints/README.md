@@ -3,7 +3,7 @@
 ![image](https://raw.githubusercontent.com/anitay20/ios-tutorials/master/isItPrimeWithConstraints/isItPrimeWithConstraints.gif)
 
 
-What I learned:
+**What I learned:**
 * If you use an if let, it will make sure there was something entered in the inputField. Also, because the Int() is trying to cast the text as an integer. When it can't cast it, this condition fails.
 ```swift
 if let num = Int(inputField.text!)
