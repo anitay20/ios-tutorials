@@ -5,3 +5,4 @@
 
 **Bugs:**
 * Pressing the play button multiple times would make the timer go faster. We should only be able to press the play button once.
+* If you press the play button repeatedly and then press the pause or stop button, the timer will still keep going. 
