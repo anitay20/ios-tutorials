@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" restorationIdentifier="Cell" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="97z-Sm-jZX">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="97z-Sm-jZX">
                                 <rect key="frame" x="0.0" y="137" width="600" height="463"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -26,7 +26,7 @@
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JWa-Tf-SN6" id="vBu-hy-5dI">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -45,8 +45,12 @@
                                     <action selector="numberSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="zfo-Ls-mb1"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="so5-al-7yC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="so5-al-7yC">
                                 <rect key="frame" x="237" y="65" width="126" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="57" id="5ye-1A-frd"/>
+                                    <constraint firstAttribute="width" constant="126" id="oJX-Ec-dmr"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -55,15 +59,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="97z-Sm-jZX" secondAttribute="trailing" constant="-20" id="9x4-Kq-YUg"/>
-                            <constraint firstItem="so5-al-7yC" firstAttribute="top" secondItem="0kF-eX-FCC" secondAttribute="bottom" constant="15" id="Aj6-9v-mna"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="so5-al-7yC" secondAttribute="trailing" constant="217" id="KWR-yz-wd3"/>
-                            <constraint firstItem="97z-Sm-jZX" firstAttribute="top" secondItem="so5-al-7yC" secondAttribute="bottom" constant="15" id="NUp-bX-bJb"/>
+                            <constraint firstItem="so5-al-7yC" firstAttribute="centerX" secondItem="0kF-eX-FCC" secondAttribute="centerX" id="HX4-PP-8Yq"/>
+                            <constraint firstItem="97z-Sm-jZX" firstAttribute="top" secondItem="so5-al-7yC" secondAttribute="bottom" constant="15" id="Iaj-gY-H3v"/>
                             <constraint firstItem="0kF-eX-FCC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="SA7-Tz-mQa"/>
                             <constraint firstItem="97z-Sm-jZX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Xgc-iQ-fid"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="97z-Sm-jZX" secondAttribute="bottom" id="doI-Ls-51G"/>
                             <constraint firstItem="0kF-eX-FCC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gpZ-LU-NdC"/>
                             <constraint firstItem="0kF-eX-FCC" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="k2d-5z-oSg"/>
-                            <constraint firstItem="so5-al-7yC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="217" id="zta-TG-5b8"/>
+                            <constraint firstItem="so5-al-7yC" firstAttribute="top" secondItem="0kF-eX-FCC" secondAttribute="bottom" constant="15" id="o4K-vT-NXQ"/>
                         </constraints>
                     </view>
                     <connections>
