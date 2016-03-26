@@ -19,18 +19,6 @@ class ViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var table: UITableView!
     @IBOutlet weak var number: UILabel!
-
-    
-    func createArray(num: Int) -> [Int] {
-        var ints = [Int]()
-        
-        for i in 1...num {
-            ints.append(i)
-        }
-        return ints
-    }
-    
-    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 50
