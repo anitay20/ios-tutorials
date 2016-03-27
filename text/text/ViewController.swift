@@ -14,13 +14,18 @@ class ViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var showText: UILabel!
     @IBAction func submitText(sender: UIButton!) {
         showText.text = enteredText.text
+        NSUserDefaults.standardUserDefaults().setObject(showText.text, forKey: "text")
     }
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if NSUserDefaults.standardUserDefaults().objectForKey("text") != nil {
+            showText.text = NSUserDefaults.standardUserDefaults().objectForKey("text") as? String
+        }
+        
         self.enteredText.delegate = self
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
