@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--List-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,6 +18,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STb-lt-D4T">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ctE-nq-21J"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="To Do List" id="ytd-at-f8b">
+                                        <barButtonItem key="rightBarButtonItem" title="Reset" id="Jlk-Iu-AS8">
+                                            <connections>
+                                                <action selector="reset:" destination="9pv-A4-QxB" id="4wl-xG-qOy"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
                                 <rect key="frame" x="221" y="279" width="157.5" height="41.5"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -32,14 +47,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0yN-Ib-k6x">
-                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="Y1D-FN-wac">
                                         <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y1D-FN-wac" id="Y9f-9S-M4R">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -52,10 +67,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="0yN-Ib-k6x" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="JtB-lc-tHU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="STb-lt-D4T" secondAttribute="trailing" constant="-20" id="3VO-SU-R7g"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0yN-Ib-k6x" secondAttribute="trailing" constant="-20" id="LkU-sA-ORg"/>
                             <constraint firstItem="0yN-Ib-k6x" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-20" id="R0Q-wl-PeS"/>
+                            <constraint firstItem="STb-lt-D4T" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" id="Ub2-VU-uTy"/>
+                            <constraint firstItem="STb-lt-D4T" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="-20" id="akN-yY-J3j"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="0yN-Ib-k6x" secondAttribute="bottom" id="ao3-Xo-WXI"/>
+                            <constraint firstItem="0yN-Ib-k6x" firstAttribute="top" secondItem="STb-lt-D4T" secondAttribute="bottom" id="jGq-nU-oXz"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -64,7 +82,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="List" image="first" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="toDoTable" destination="0yN-Ib-k6x" id="oon-WJ-JtL"/>
                     </connections>
@@ -73,7 +91,7 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--Second-->
+        <!--Add Item-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="ToDoList" customModuleProvider="target" sceneMemberID="viewController">
@@ -124,7 +142,7 @@
                             <constraint firstItem="2Vo-7i-smL" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="68" id="v9S-Qy-FXU"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Add Item" image="second" id="cPa-gy-q4n"/>
                     <connections>
                         <outlet property="addText" destination="NRx-os-MrG" id="Wfb-NK-vh5"/>
                         <outlet property="enterText" destination="2Vo-7i-smL" id="pdP-XM-UzZ"/>

@@ -13,13 +13,18 @@ var toDoList = [String]()
 class FirstViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var toDoTable: UITableView!
+    @IBAction func reset(sender: UIBarButtonItem) {
+        toDoList = [String]()
+        NSUserDefaults.standardUserDefaults().setObject(toDoList, forKey: "toDoList")
+        toDoTable.reloadData()
+        print("\(toDoList)")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if NSUserDefaults.standardUserDefaults().objectForKey("toDoList") != nil {
             toDoList = NSUserDefaults.standardUserDefaults().objectForKey("toDoList") as! [String]
         }
-        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
