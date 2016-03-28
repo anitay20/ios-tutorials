@@ -14,6 +14,14 @@ class FirstViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet weak var toDoTable: UITableView!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        if NSUserDefaults.standardUserDefaults().objectForKey("toDoList") != nil {
+            toDoList = NSUserDefaults.standardUserDefaults().objectForKey("toDoList") as! [String]
+        }
+        
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
        return toDoList.count
     }
@@ -25,15 +33,22 @@ class FirstViewController: UIViewController, UITableViewDelegate {
         return cell
     }
     
+    
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            toDoList.removeAtIndex(indexPath.row)
+            NSUserDefaults.standardUserDefaults().setObject(toDoList, forKey: "toDoList")
+        }
+        toDoTable.reloadData()
+        print("\(toDoList)")
+    }
+    
     override func viewDidAppear(animated: Bool) {
         toDoTable.reloadData()
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
 
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

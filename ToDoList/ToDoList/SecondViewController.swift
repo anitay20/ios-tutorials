@@ -28,8 +28,9 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     }
     
     func performAction() {
-        if let item = enterText.text {
-            toDoList.append(item)
+        if enterText.text != "" {
+            toDoList.append(enterText.text!)
+            NSUserDefaults.standardUserDefaults().setObject(toDoList, forKey: "toDoList")
             enterText.text = ""   // Reset the textField
         }
         print("\(toDoList)")
