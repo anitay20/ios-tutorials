@@ -1,4 +1,4 @@
-*webView* is just an app that displays a webpage.
+**webView** is an app that displays a webpage.
 
 There are different ways to implement a UI Webview into your app.
 
