@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var time: UILabel!
     
     @IBAction func start(sender: UIBarButtonItem) {
-        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("result"), userInfo: nil, repeats: true)
+        timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(result), userInfo: nil, repeats: true)
         
     }
     
