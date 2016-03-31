@@ -18,14 +18,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky" translatesAutoresizingMaskIntoConstraints="NO" id="Qll-y1-igd">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find the weather for:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYn-gi-O0b">
                                 <rect key="frame" x="84" y="80" width="326" height="76"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="326" id="33s-hx-OJw"/>
                                     <constraint firstAttribute="height" constant="76" id="ORp-67-hiU"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="eg. San Francisco" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UIe-oq-Yfj">
@@ -38,7 +41,9 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="69" id="Ate-kH-LZG"/>
                                 </constraints>
-                                <state key="normal" title="See Website"/>
+                                <state key="normal" title="See Website">
+                                    <color key="titleColor" red="0.1024921015320519" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="seeWebsite:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LMI-hd-myQ"/>
                                     <segue destination="hzJ-e6-zkH" kind="show" id="5ua-9U-uNX"/>
@@ -50,7 +55,10 @@
                                     <constraint firstAttribute="width" constant="97" id="PXG-nK-Jl0"/>
                                     <constraint firstAttribute="height" constant="56" id="XxC-5x-AVT"/>
                                 </constraints>
-                                <state key="normal" title="Submit"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.1024921015" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qtI-jj-t5B"/>
                                 </connections>
@@ -61,7 +69,7 @@
                                     <constraint firstAttribute="height" constant="127" id="z2s-wc-XX7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -71,6 +79,7 @@
                             <constraint firstItem="SYn-gi-O0b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="0p1-OZ-YzC"/>
                             <constraint firstItem="UIe-oq-Yfj" firstAttribute="top" secondItem="SYn-gi-O0b" secondAttribute="bottom" constant="19" id="11u-Pb-awA"/>
                             <constraint firstItem="vXz-6B-Ytn" firstAttribute="centerX" secondItem="y78-an-3Os" secondAttribute="centerX" id="8sN-ti-oXt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qll-y1-igd" secondAttribute="trailing" constant="-20" id="Bfi-1k-RBo"/>
                             <constraint firstItem="vXz-6B-Ytn" firstAttribute="leading" secondItem="u7i-y4-2Tx" secondAttribute="leading" id="Cm6-4k-zLc"/>
                             <constraint firstItem="y78-an-3Os" firstAttribute="trailing" secondItem="UIe-oq-Yfj" secondAttribute="trailing" id="E0R-ce-dea"/>
                             <constraint firstItem="vXz-6B-Ytn" firstAttribute="top" secondItem="y78-an-3Os" secondAttribute="bottom" constant="16" id="HbT-YY-tCv"/>
@@ -79,7 +88,10 @@
                             <constraint firstItem="y78-an-3Os" firstAttribute="top" secondItem="u7i-y4-2Tx" secondAttribute="bottom" constant="20" id="it9-IK-hPo"/>
                             <constraint firstItem="UIe-oq-Yfj" firstAttribute="leading" secondItem="SYn-gi-O0b" secondAttribute="leading" id="jLy-v7-C52"/>
                             <constraint firstItem="SYn-gi-O0b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="mlB-kv-5Bw"/>
+                            <constraint firstItem="Qll-y1-igd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="pUU-xG-FDL"/>
+                            <constraint firstItem="Qll-y1-igd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="rUd-A2-8Ql"/>
                             <constraint firstItem="vXz-6B-Ytn" firstAttribute="trailing" secondItem="u7i-y4-2Tx" secondAttribute="trailing" id="udq-He-pzv"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Qll-y1-igd" secondAttribute="bottom" id="wb8-ZA-wE3"/>
                         </constraints>
                     </view>
                     <connections>
@@ -140,4 +152,7 @@
             <point key="canvasLocation" x="1093" y="429"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sky" width="634" height="371"/>
+    </resources>
 </document>
