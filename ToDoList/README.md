@@ -4,9 +4,11 @@ _toDoList_ keeps a list of items to add to the To Do List.
 
 ![image](toDoList.gif)
 
-_Extras:** Added reset button_ Changed text at the bottom* Made sure not to accept empty items
+Extras:
+* Added reset button_ Changed text at the bottom* Made sure not to accept empty items
 
-_Learned:*_ Delete action for tables:
+Learned:
+* Delete action for tables:
 
 ```swift
 func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
