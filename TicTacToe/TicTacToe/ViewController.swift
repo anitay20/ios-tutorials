@@ -40,21 +40,22 @@ class ViewController: UIViewController {
                 activePlayer = 1
             }
             print((gameState))
+            
             for combo in winningCombos {
-                if (gameState[combo[0]] != 0 && gameState[combo[0]] == gameState[combo[1]] && gameState[combo[1]] == gameState[combo[2]]) {
+                
+                if (gameState[combo[0]-1] != 0 && gameState[combo[0]-1] == gameState[combo[1]-1] && gameState[combo[1]-1] == gameState[combo[2]-1]) {
                     
                     gameActive = false
                     
-                    if gameState[combo[0]] == 1 {
-                        print("O won!")
+                    if gameState[combo[0]-1] == 1 {
                         gameOver.text = "O won!"
                     } else {
-                        print("X won!")
                         gameOver.text = "X won!"
                     }
                     endGame()
                 }
             }
+            
             if gameActive {
                 gameActive = false
                 for buttonState in gameState {
@@ -62,11 +63,12 @@ class ViewController: UIViewController {
                     gameActive = true
                     }
                 }
+                if !gameActive {
+                    gameOver.text = "It's a draw"
+                    endGame()
+                }
             }
-            if !gameActive {
-                gameOver.text = "It's a draw"
-                endGame()
-            }
+            
         }
     }
     

@@ -116,15 +116,6 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="280" id="cQ4-zF-hsp"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" tag="10" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luK-h9-VIq" userLabel="playAgain">
-                                <rect key="frame" x="123" y="260" width="71" height="30"/>
-                                <state key="normal" title="Play Again">
-                                    <color key="titleColor" red="0.037583530221780515" green="0.0011317555262465584" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tR7-cf-m1t"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ede-jL-JfF">
                                 <rect key="frame" x="35" y="218" width="247" height="43"/>
                                 <color key="backgroundColor" red="0.65472744226262081" green="1" blue="0.98521913561655972" alpha="1" colorSpace="calibratedRGB"/>
@@ -132,9 +123,18 @@
                                     <constraint firstAttribute="height" constant="43" id="EkA-lU-JxB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luK-h9-VIq" userLabel="playAgain">
+                                <rect key="frame" x="125" y="260" width="71" height="30"/>
+                                <state key="normal" title="Play Again">
+                                    <color key="titleColor" red="0.037583530221780515" green="0.0011317555262465584" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAgain:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tR7-cf-m1t"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -144,9 +144,10 @@
                             <constraint firstItem="luK-h9-VIq" firstAttribute="top" secondItem="JX3-fG-OA7" secondAttribute="bottom" constant="-120" id="5fi-ry-0ta"/>
                             <constraint firstItem="JX3-fG-OA7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5fw-BO-3HH"/>
                             <constraint firstItem="JX3-fG-OA7" firstAttribute="leading" secondItem="Ede-jL-JfF" secondAttribute="trailing" constant="-262" id="7jT-ua-cKA"/>
+                            <constraint firstItem="luK-h9-VIq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C8U-h1-bmM"/>
                             <constraint firstItem="JX3-fG-OA7" firstAttribute="leading" secondItem="6er-xs-J9R" secondAttribute="trailing" constant="-80" id="DrA-EC-MZL"/>
                             <constraint firstItem="5vp-Ia-Hvs" firstAttribute="leading" secondItem="JX3-fG-OA7" secondAttribute="trailing" constant="-172" id="FTn-71-l2b"/>
-                            <constraint firstItem="JX3-fG-OA7" firstAttribute="leading" secondItem="luK-h9-VIq" secondAttribute="trailing" constant="-161" id="I0c-em-RnI"/>
+                            <constraint firstItem="JX3-fG-OA7" firstAttribute="leading" secondItem="luK-h9-VIq" secondAttribute="trailing" constant="-176" id="I0c-em-RnI"/>
                             <constraint firstItem="JX3-fG-OA7" firstAttribute="leading" secondItem="3PT-xp-2xg" secondAttribute="trailing" constant="-80" id="Iaf-an-ngF"/>
                             <constraint firstItem="JX3-fG-OA7" firstAttribute="top" secondItem="Ede-jL-JfF" secondAttribute="bottom" constant="-161" id="Mbd-ax-kip"/>
                             <constraint firstItem="q1A-jh-y1m" firstAttribute="top" secondItem="JX3-fG-OA7" secondAttribute="bottom" constant="-82" id="OHs-6r-sVL"/>
