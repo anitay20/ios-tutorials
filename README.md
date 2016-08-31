@@ -11,3 +11,7 @@ Links:
 * [tutsPlus] (http://code.tutsplus.com/categories/ios-sdk)
 * [hacking with swift] (https://www.hackingwithswift.com/)
 * [codePath's ios page] (http://guides.codepath.com/ios/)
+
+Tools:
+* [Prepo] (https://itunes.apple.com/us/app/prepo/id476533227?mt=12) - Used for creating the app icon assets
+* [LICEcap] (http://www.cockos.com/licecap/) - Demo gif file
