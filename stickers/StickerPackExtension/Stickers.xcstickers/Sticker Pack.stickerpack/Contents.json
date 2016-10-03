@@ -1,0 +1,89 @@
+{
+  "stickers" : [
+    {
+      "filename" : "Airport-100 (1).sticker"
+    },
+    {
+      "filename" : "Airport-100.sticker"
+    },
+    {
+      "filename" : "Apple-100.sticker"
+    },
+    {
+      "filename" : "Beach-100.sticker"
+    },
+    {
+      "filename" : "Party Baloon-100.sticker"
+    },
+    {
+      "filename" : "Electric Bumper Car-100.sticker"
+    },
+    {
+      "filename" : "Circus Tent-100.sticker"
+    },
+    {
+      "filename" : "Map Marker-100.sticker"
+    },
+    {
+      "filename" : "Children-100.sticker"
+    },
+    {
+      "filename" : "Citrus-100.sticker"
+    },
+    {
+      "filename" : "Heart Balloon-100.sticker"
+    },
+    {
+      "filename" : "Fountain-100.sticker"
+    },
+    {
+      "filename" : "Skeeball-100.sticker"
+    },
+    {
+      "filename" : "Hex Burner-100.sticker"
+    },
+    {
+      "filename" : "Flip Flops-100.sticker"
+    },
+    {
+      "filename" : "Roller Coaster-100.sticker"
+    },
+    {
+      "filename" : "Party Baloons-100.sticker"
+    },
+    {
+      "filename" : "Segway-100.sticker"
+    },
+    {
+      "filename" : "Sleeping Bag-100.sticker"
+    },
+    {
+      "filename" : "Pin Cushion-100.sticker"
+    },
+    {
+      "filename" : "Party Hat-100.sticker"
+    },
+    {
+      "filename" : "Palace-100.sticker"
+    },
+    {
+      "filename" : "Tomato-100.sticker"
+    },
+    {
+      "filename" : "Wrestling-100.sticker"
+    },
+    {
+      "filename" : "Weber-100.sticker"
+    },
+    {
+      "filename" : "Water Park-100.sticker"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "grid-size" : "regular"
+  }
+}
