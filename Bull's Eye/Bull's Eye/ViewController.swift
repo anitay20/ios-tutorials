@@ -32,9 +32,8 @@ class ViewController: UIViewController {
 
     var scoreNum = 0
     var roundNum = 0
-
     
-    @IBAction func tapMe(_ sender: AnyObject) {
+    @IBAction func tapMe(sender: AnyObject) {
         points = 100 - abs(targetValue - currentValue)
         let message = "The value of the slider is \(currentValue).\nThe target was \(targetValue).\nYou got \(points) points!"
         let alert = UIAlertController(title: "Test", message: message, preferredStyle: .alert)
@@ -53,7 +52,7 @@ class ViewController: UIViewController {
     }
 
     
-    @IBAction func startOver(_ sender: AnyObject) {
+    @IBAction func startOver(sender: AnyObject) {
         let alert = UIAlertController(title: "Start Over?", message: "Do you really want to start over? There's no turning back from this...", preferredStyle: .alert)
         let OKaction = UIAlertAction(title: "OK", style: .default, handler: { (action) in self.startNewRound() })
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
@@ -82,6 +81,9 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func info(_ sender: AnyObject) {
+        let alert = UIAlertController(title: "Rules", message: "These are the rules of the game:", preferredStyle: .alert)
+    }
     
 }
 
