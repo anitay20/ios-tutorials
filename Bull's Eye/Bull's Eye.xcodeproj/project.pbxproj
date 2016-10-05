@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08885A761DA4EBF600EB2284 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08885A741DA4EBF600EB2284 /* Localizable.strings */; };
 		08AAB5611D8B0C1D002F174A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAB5601D8B0C1D002F174A /* AppDelegate.swift */; };
 		08AAB5631D8B0C1D002F174A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08AAB5621D8B0C1D002F174A /* ViewController.swift */; };
 		08AAB5661D8B0C1D002F174A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08AAB5641D8B0C1D002F174A /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08885A771DA4EC0800EB2284 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "Bull's Eye/en.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		08AAB55D1D8B0C1D002F174A /* Bull's Eye.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bull's Eye.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08AAB5601D8B0C1D002F174A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08AAB5621D8B0C1D002F174A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 		08AAB55F1D8B0C1D002F174A /* Bull's Eye */ = {
 			isa = PBXGroup;
 			children = (
+				08885A741DA4EBF600EB2284 /* Localizable.strings */,
 				08AAB5601D8B0C1D002F174A /* AppDelegate.swift */,
 				08AAB5621D8B0C1D002F174A /* ViewController.swift */,
 				08AAB5641D8B0C1D002F174A /* Main.storyboard */,
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08AAB56B1D8B0C1D002F174A /* LaunchScreen.storyboard in Resources */,
+				08885A761DA4EBF600EB2284 /* Localizable.strings in Resources */,
 				08AAB5681D8B0C1D002F174A /* Assets.xcassets in Resources */,
 				08AAB5661D8B0C1D002F174A /* Main.storyboard in Resources */,
 			);
@@ -144,6 +148,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		08885A741DA4EBF600EB2284 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08885A771DA4EC0800EB2284 /* en */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		08AAB5641D8B0C1D002F174A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
