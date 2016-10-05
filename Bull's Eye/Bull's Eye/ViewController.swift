@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     var currentValue: Int = 0
     var targetValue: Int = 0
     var points: Int = 0
+    var scoreNum = 0
+    var roundNum = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,38 +32,30 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    var scoreNum = 0
-    var roundNum = 0
     
     @IBAction func tapMe(sender: AnyObject) {
         points = 100 - abs(targetValue - currentValue)
         let message = "The value of the slider is \(currentValue).\nThe target was \(targetValue).\nYou got \(points) points!"
         let alert = UIAlertController(title: "Test", message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-        
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
+        
         roundNum += 1
         scoreNum += points
-        round.text = "\(roundNum)"
-//        slider.value = 50
         targetValue = 1 + Int(arc4random_uniform(100))
-        targetNum.text = "\(targetValue)"
-        score.text = "\(scoreNum)"
-        
+        updateLabels()
     }
 
     
     @IBAction func startOver(sender: AnyObject) {
-        let alert = UIAlertController(title: "Start Over?", message: "Do you really want to start over? There's no turning back from this...", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Start over?", message: "Do you really want to start over? There's no turning back from this...", preferredStyle: .alert)
         let OKaction = UIAlertAction(title: "OK", style: .default, handler: { (action) in self.startNewRound() })
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
         alert.addAction(OKaction)
         alert.addAction(cancelAction)
-        
         present(alert, animated: true, completion: nil)
     }
-    
     
     func startNewRound() {
         scoreNum = 0
@@ -69,6 +63,10 @@ class ViewController: UIViewController {
         currentValue = lroundf(slider.value)
         slider.value = 50
         targetValue = 1 + Int(arc4random_uniform(100))
+        updateLabels()
+    }
+    
+    func updateLabels() {
         targetNum.text = "\(targetValue)"
         score.text = "\(scoreNum)"
         round.text = "\(roundNum)"
@@ -82,7 +80,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func info(_ sender: AnyObject) {
-        let alert = UIAlertController(title: "Rules", message: "These are the rules of the game:", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Rules", message: "These are the rules of the game:\nTry to guess where the target number\nis on the slider", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true, completion: nil)
     }
     
 }
