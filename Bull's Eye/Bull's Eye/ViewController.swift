@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        startNewRound()
+        startNewGame()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -40,28 +40,31 @@ class ViewController: UIViewController {
         let action = UIAlertAction(title: "OK", style: .default, handler: nil)
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-        
-        roundNum += 1
-        scoreNum += points
-        targetValue = 1 + Int(arc4random_uniform(100))
-        updateLabels()
+        startNewRound(points: points)
     }
 
     
     @IBAction func startOver(sender: AnyObject) {
         let alert = UIAlertController(title: "Start over?", message: "Do you really want to start over? There's no turning back from this...", preferredStyle: .alert)
-        let OKaction = UIAlertAction(title: "OK", style: .default, handler: { (action) in self.startNewRound() })
+        let OKaction = UIAlertAction(title: "OK", style: .default, handler: { (action) in self.startNewGame() })
         let cancelAction = UIAlertAction(title: "Cancel", style: .destructive, handler: nil)
         alert.addAction(OKaction)
         alert.addAction(cancelAction)
         present(alert, animated: true, completion: nil)
     }
     
-    func startNewRound() {
+    func startNewGame() {
         scoreNum = 0
-        roundNum = 0
+        roundNum = 1
         currentValue = lroundf(slider.value)
         slider.value = 50
+        targetValue = 1 + Int(arc4random_uniform(100))
+        updateLabels()
+    }
+    
+    func startNewRound(points: Int) {
+        scoreNum += points
+        roundNum += 1
         targetValue = 1 + Int(arc4random_uniform(100))
         updateLabels()
     }
