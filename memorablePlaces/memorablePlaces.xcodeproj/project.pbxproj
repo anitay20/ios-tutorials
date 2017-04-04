@@ -14,6 +14,7 @@
 		08D9ABC81E941E6300164DA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08D9ABC61E941E6300164DA9 /* LaunchScreen.storyboard */; };
 		08D9ABD31E941E6400164DA9 /* memorablePlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D9ABD21E941E6400164DA9 /* memorablePlacesTests.swift */; };
 		08D9ABDE1E94203E00164DA9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D9ABDD1E94203E00164DA9 /* TableViewController.swift */; };
+		08D9ABE11E94325300164DA9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D9ABE01E94325300164DA9 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		08D9ABD21E941E6400164DA9 /* memorablePlacesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memorablePlacesTests.swift; sourceTree = "<group>"; };
 		08D9ABD41E941E6400164DA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08D9ABDD1E94203E00164DA9 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		08D9ABE01E94325300164DA9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08D9ABE11E94325300164DA9 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +67,7 @@
 				08D9ABBC1E941E6300164DA9 /* memorablePlaces */,
 				08D9ABD11E941E6400164DA9 /* memorablePlacesTests */,
 				08D9ABBB1E941E6300164DA9 /* Products */,
+				08D9ABDF1E94325300164DA9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +101,14 @@
 				08D9ABD41E941E6400164DA9 /* Info.plist */,
 			);
 			path = memorablePlacesTests;
+			sourceTree = "<group>";
+		};
+		08D9ABDF1E94325300164DA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08D9ABE01E94325300164DA9 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,6 +422,7 @@
 				08D9ABD91E941E6400164DA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		08D9ABDA1E941E6400164DA9 /* Build configuration list for PBXNativeTarget "memorablePlacesTests" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +431,7 @@
 				08D9ABDC1E941E6400164DA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
