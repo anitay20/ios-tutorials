@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mT5-8S-CzY">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xJp-O9-Hh8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,76 +21,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="oGS-0d-Kwh"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="our-Bi-7Ob">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="oGS-0d-Kwh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="D8H-bF-6rc"/>
-                            <constraint firstAttribute="trailing" secondItem="oGS-0d-Kwh" secondAttribute="trailing" id="JLY-0V-qEu"/>
-                            <constraint firstItem="oGS-0d-Kwh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="LpQ-br-4vM"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oGS-0d-Kwh" secondAttribute="bottom" id="nZX-dv-R9c"/>
+                            <constraint firstItem="our-Bi-7Ob" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0TP-8E-qeV"/>
+                            <constraint firstAttribute="trailing" secondItem="our-Bi-7Ob" secondAttribute="trailing" id="E06-jD-jkw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="our-Bi-7Ob" secondAttribute="bottom" id="K5R-fT-GvC"/>
+                            <constraint firstItem="our-Bi-7Ob" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="a1L-BT-W7W"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="map" destination="oGS-0d-Kwh" id="5mP-Wg-nf6"/>
+                        <outlet property="map" destination="our-Bi-7Ob" id="cbz-68-dMq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="24.800000000000001" y="34.632683658170919"/>
+            <point key="canvasLocation" x="2829.5999999999999" y="138.98050974512745"/>
         </scene>
         <!--Root View Controller-->
-        <scene sceneID="eXW-hx-eu8">
+        <scene sceneID="U9e-1Y-EGY">
             <objects>
-                <tableViewController id="1Eo-eO-ysP" customClass="TableViewController" customModule="memorablePlaces" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="z2a-NF-mil">
+                <tableViewController id="qgZ-hZ-uer" customClass="TableViewController" customModule="memorablePlaces" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="oTg-za-7ve">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hR4-LS-afi">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="t4g-Fo-u2r">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hR4-LS-afi" id="X4I-Ge-nxb">
-                                    <frame key="frameInset" width="375" height="43"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t4g-Fo-u2r" id="cSz-eF-SKK">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="1Eo-eO-ysP" id="jFk-2v-Qzn"/>
-                            <outlet property="delegate" destination="1Eo-eO-ysP" id="veX-bH-M7X"/>
+                            <outlet property="dataSource" destination="qgZ-hZ-uer" id="fFw-NE-n89"/>
+                            <outlet property="delegate" destination="qgZ-hZ-uer" id="vwT-7I-WHO"/>
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="b0D-wr-8HM">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ADT-YO-yJ5">
+                    <navigationItem key="navigationItem" title="Root View Controller" id="ZDi-Mk-VTG">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="DeW-P6-PD5">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="RdG-wo-eMG"/>
+                                <segue destination="BYZ-38-t0r" kind="show" id="8np-XI-JVI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ew8-Bi-KgX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OZM-rb-WgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-700" y="35"/>
+            <point key="canvasLocation" x="1934" y="139"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="Cnq-gz-ozF">
+        <scene sceneID="HIN-M1-pVf">
             <objects>
-                <navigationController id="mT5-8S-CzY" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3jT-jv-HeD">
+                <navigationController id="xJp-O9-Hh8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0LS-NO-RmE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="1Eo-eO-ysP" kind="relationship" relationship="rootViewController" id="i0i-zX-qJo"/>
+                        <segue destination="qgZ-hZ-uer" kind="relationship" relationship="rootViewController" id="XUb-1Q-26N"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WLf-xx-Lp3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L8m-uy-Bru" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1468" y="35"/>
+            <point key="canvasLocation" x="982" y="139"/>
         </scene>
     </scenes>
 </document>

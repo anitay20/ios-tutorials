@@ -32,12 +32,6 @@ class TutorialPageViewController: UIPageViewController {
 
 extension TutorialPageViewController: UIPageViewControllerDataSource {
     
-//    var orderedViewControllers: [UIViewController] {
-//        return [self.newColoredViewController(color: "Green"),
-//                self.newColoredViewController(color: "Red"),
-//                self.newColoredViewController(color: "Blue")]
-//    }
-    
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
 
         guard let viewControllerIndex = orderedViewControllers.index(of: viewController) else {
@@ -80,6 +74,18 @@ extension TutorialPageViewController: UIPageViewControllerDataSource {
         return orderedViewControllers[nextIndex]
     }
     
+    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+        return orderedViewControllers.count
+    }
+    
+    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+        guard let firstViewController = viewControllers?.first,
+            let firstViewControllerIndex = orderedViewControllers.index(of: firstViewController) else {
+                return 0
+        }
+        
+        return firstViewControllerIndex
+    }
     
     func newColoredViewController(color: String) -> UIViewController {
         return UIStoryboard(name: "Main", bundle: nil) .instantiateViewController(withIdentifier: "\(color)ViewController")

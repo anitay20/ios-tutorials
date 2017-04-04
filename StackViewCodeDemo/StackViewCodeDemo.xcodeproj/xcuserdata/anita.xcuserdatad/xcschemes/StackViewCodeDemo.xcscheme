@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0800"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "08D9ABB91E941E6300164DA9"
-               BuildableName = "memorablePlaces.app"
-               BlueprintName = "memorablePlaces"
-               ReferencedContainer = "container:memorablePlaces.xcodeproj">
+               BlueprintIdentifier = "086C89DC1DBFFAB400521578"
+               BuildableName = "StackViewCodeDemo.app"
+               BlueprintName = "StackViewCodeDemo"
+               ReferencedContainer = "container:StackViewCodeDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "08D9ABCD1E941E6400164DA9"
-               BuildableName = "memorablePlacesTests.xctest"
-               BlueprintName = "memorablePlacesTests"
-               ReferencedContainer = "container:memorablePlaces.xcodeproj">
+               BlueprintIdentifier = "086C89F01DBFFAB500521578"
+               BuildableName = "StackViewCodeDemoTests.xctest"
+               BlueprintName = "StackViewCodeDemoTests"
+               ReferencedContainer = "container:StackViewCodeDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "086C89FB1DBFFAB500521578"
+               BuildableName = "StackViewCodeDemoUITests.xctest"
+               BlueprintName = "StackViewCodeDemoUITests"
+               ReferencedContainer = "container:StackViewCodeDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "08D9ABB91E941E6300164DA9"
-            BuildableName = "memorablePlaces.app"
-            BlueprintName = "memorablePlaces"
-            ReferencedContainer = "container:memorablePlaces.xcodeproj">
+            BlueprintIdentifier = "086C89DC1DBFFAB400521578"
+            BuildableName = "StackViewCodeDemo.app"
+            BlueprintName = "StackViewCodeDemo"
+            ReferencedContainer = "container:StackViewCodeDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -65,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "08D9ABB91E941E6300164DA9"
-            BuildableName = "memorablePlaces.app"
-            BlueprintName = "memorablePlaces"
-            ReferencedContainer = "container:memorablePlaces.xcodeproj">
+            BlueprintIdentifier = "086C89DC1DBFFAB400521578"
+            BuildableName = "StackViewCodeDemo.app"
+            BlueprintName = "StackViewCodeDemo"
+            ReferencedContainer = "container:StackViewCodeDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -84,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "08D9ABB91E941E6300164DA9"
-            BuildableName = "memorablePlaces.app"
-            BlueprintName = "memorablePlaces"
-            ReferencedContainer = "container:memorablePlaces.xcodeproj">
+            BlueprintIdentifier = "086C89DC1DBFFAB400521578"
+            BuildableName = "StackViewCodeDemo.app"
+            BlueprintName = "StackViewCodeDemo"
+            ReferencedContainer = "container:StackViewCodeDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  memorablePlaces
+//  StackViewCodeDemo
 //
-//  Created by anita on 4/4/17.
-//  Copyright © 2017 anita. All rights reserved.
+//  Created by anita on 10/25/16.
+//  Copyright © 2016 anita. All rights reserved.
 //
 
 import UIKit

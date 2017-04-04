@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>memorablePlaces.xcscheme</key>
+		<key>StackViewCodeDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>08D9ABB91E941E6300164DA9</key>
+		<key>086C89DC1DBFFAB400521578</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>08D9ABCD1E941E6400164DA9</key>
+		<key>086C89F01DBFFAB500521578</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>086C89FB1DBFFAB500521578</key>
 		<dict>
 			<key>primary</key>
 			<true/>

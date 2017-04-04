@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		087281AB1DC6C61B00CB9BD3 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087281AA1DC6C61B00CB9BD3 /* TutorialViewController.swift */; };
 		089FA3161DB449F500B1758B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 089FA3151DB449F500B1758B /* AppDelegate.swift */; };
 		089FA31F1DB449F500B1758B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 089FA31D1DB449F500B1758B /* Main.storyboard */; };
 		089FA3211DB449F500B1758B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 089FA3201DB449F500B1758B /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		087281AA1DC6C61B00CB9BD3 /* TutorialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
 		089FA3121DB449F500B1758B /* UIPageViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIPageViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		089FA3151DB449F500B1758B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		089FA31E1DB449F500B1758B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				089FA3151DB449F500B1758B /* AppDelegate.swift */,
 				089FA31D1DB449F500B1758B /* Main.storyboard */,
 				089FA32B1DB44AB900B1758B /* TutorialPageViewController.swift */,
+				087281AA1DC6C61B00CB9BD3 /* TutorialViewController.swift */,
 				08EF644C1DB6BE40006258EB /* TutorialPageViewModel.swift */,
 				089FA3201DB449F500B1758B /* Assets.xcassets */,
 				089FA3251DB449F500B1758B /* Info.plist */,
@@ -138,6 +141,7 @@
 			files = (
 				089FA32C1DB44AB900B1758B /* TutorialPageViewController.swift in Sources */,
 				08EF644D1DB6BE40006258EB /* TutorialPageViewModel.swift in Sources */,
+				087281AB1DC6C61B00CB9BD3 /* TutorialViewController.swift in Sources */,
 				089FA3161DB449F500B1758B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
