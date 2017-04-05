@@ -83,7 +83,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 places.append(["name":title, "lat":"\(newCoordinate.latitude)", "lon":"\(newCoordinate.longitude)"])
                 var annotation = MKPointAnnotation()
                 annotation.coordinate = newCoordinate
-                annotation.title = "New Annotation"
+                annotation.title = title
                 self.map.addAnnotation(annotation)
             })
         }
