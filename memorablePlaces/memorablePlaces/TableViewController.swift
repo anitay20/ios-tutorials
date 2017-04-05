@@ -9,6 +9,7 @@
 import UIKit
 
 var places = [Dictionary<String,String>()]
+var activePlace = -1
 
 class TableViewController: UITableViewController {
 
@@ -45,7 +46,17 @@ class TableViewController: UITableViewController {
         cell.textLabel?.text = places[indexPath.row]["name"]
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        activePlace = indexPath.row
+        
+        return indexPath
+    }
 
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

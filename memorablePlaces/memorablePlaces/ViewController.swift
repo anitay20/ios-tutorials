@@ -21,8 +21,29 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         manager = CLLocationManager()
         manager.delegate = self
         manager.desiredAccuracy = kCLLocationAccuracyBest
-        manager.requestWhenInUseAuthorization()
-        manager.startUpdatingLocation()
+
+        if activePlace == -1 {
+            manager.requestWhenInUseAuthorization()
+            manager.startUpdatingLocation()
+        } else {
+            let latitude = NSString(string: places[activePlace]["lat"]!).doubleValue
+            let longitude = NSString(string: places[activePlace]["lon"]!).doubleValue
+            
+            var coordinate = CLLocationCoordinate2DMake(latitude, longitude)
+            var latDelta: CLLocationDegrees = 0.01
+            var lonDelta: CLLocationDegrees = 0.01
+            var span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
+            var location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+            var region: MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+            
+            self.map.setRegion(region, animated: true)
+            
+            var annotation = MKPointAnnotation()
+            annotation.coordinate = coordinate
+            annotation.title = places[activePlace]["name"]
+            self.map.addAnnotation(annotation)
+
+        }
         
         let uilpgr = UILongPressGestureRecognizer(target: self, action: #selector(self.handleLongPress(gestureRecognizer:)))
         uilpgr.minimumPressDuration = 2.0
@@ -60,10 +81,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 }
                 
                 places.append(["name":title, "lat":"\(newCoordinate.latitude)", "lon":"\(newCoordinate.longitude)"])
-            var annotation = MKPointAnnotation()
-            annotation.coordinate = newCoordinate
-            annotation.title = "New Annotation"
-            self.map.addAnnotation(annotation)
+                var annotation = MKPointAnnotation()
+                annotation.coordinate = newCoordinate
+                annotation.title = "New Annotation"
+                self.map.addAnnotation(annotation)
             })
         }
     }
@@ -80,7 +101,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         var region: MKCoordinateRegion = MKCoordinateRegionMake(location, span)
         
         self.map.setRegion(region, animated: true)
-        
     }
     
     override func didReceiveMemoryWarning() {
