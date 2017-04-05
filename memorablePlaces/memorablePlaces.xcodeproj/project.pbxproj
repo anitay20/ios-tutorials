@@ -15,6 +15,7 @@
 		08D9ABD31E941E6400164DA9 /* memorablePlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D9ABD21E941E6400164DA9 /* memorablePlacesTests.swift */; };
 		08D9ABDE1E94203E00164DA9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D9ABDD1E94203E00164DA9 /* TableViewController.swift */; };
 		08D9ABE11E94325300164DA9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08D9ABE01E94325300164DA9 /* CoreLocation.framework */; };
+		08D9ABE31E947D9500164DA9 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 08D9ABE21E947D9500164DA9 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		08D9ABD41E941E6400164DA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08D9ABDD1E94203E00164DA9 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		08D9ABE01E94325300164DA9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		08D9ABE21E947D9500164DA9 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		08D9ABB11E941E6300164DA9 = {
 			isa = PBXGroup;
 			children = (
+				08D9ABE21E947D9500164DA9 /* README.md */,
 				08D9ABBC1E941E6300164DA9 /* memorablePlaces */,
 				08D9ABD11E941E6400164DA9 /* memorablePlacesTests */,
 				08D9ABBB1E941E6300164DA9 /* Products */,
@@ -216,6 +219,7 @@
 			files = (
 				08D9ABC01E941E6300164DA9 /* ViewController.swift in Sources */,
 				08D9ABDE1E94203E00164DA9 /* TableViewController.swift in Sources */,
+				08D9ABE31E947D9500164DA9 /* README.md in Sources */,
 				08D9ABBE1E941E6300164DA9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

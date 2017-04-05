@@ -68,7 +68,7 @@
                     <navigationItem key="navigationItem" title="Root View Controller" id="ZDi-Mk-VTG">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="DeW-P6-PD5">
                             <connections>
-                                <segue destination="BYZ-38-t0r" kind="show" id="8np-XI-JVI"/>
+                                <segue destination="BYZ-38-t0r" kind="show" identifier="newPlace" id="8np-XI-JVI"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
