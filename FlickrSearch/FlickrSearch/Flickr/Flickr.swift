@@ -141,13 +141,15 @@ class Flickr {
       }) .resume()
   }
   
-  fileprivate func flickrSearchURLForSearchTerm(_ searchTerm:String) -> URL? {
+  fileprivate func flickrSearchURLForSearchTerm(_ searchTerm: String) -> URL? {
     
     guard let escapedTerm = searchTerm.addingPercentEncoding(withAllowedCharacters: CharacterSet.alphanumerics) else {
       return nil
     }
     
-    let URLString = "https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=\(apiKey)&text=\(escapedTerm)&per_page=20&format=json&nojsoncallback=1"
+    let methodString = searchTerm.isEmpty ? "flickr.photos.getRecent" : "flickr.photos.search"
+    
+    let URLString = "https://api.flickr.com/services/rest/?method=\(methodString)&api_key=\(apiKey)&text=\(escapedTerm)&per_page=20&format=json&nojsoncallback=1"
     
     guard let url = URL(string:URLString) else {
       return nil
