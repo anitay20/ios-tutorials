@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:FlickrSearch.xcodeproj">
+      location = "group:/Users/anita/ios-tutorials/FlickrSearch/FlickrSearch/FlickrFiles">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
