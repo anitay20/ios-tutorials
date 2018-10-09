@@ -2,9 +2,6 @@
 //  ViewController.swift
 //  FlickrSearch
 //
-//  Created by anita on 8/30/18.
-//  Copyright © 2018 anita. All rights reserved.
-//
 
 import UIKit
 
