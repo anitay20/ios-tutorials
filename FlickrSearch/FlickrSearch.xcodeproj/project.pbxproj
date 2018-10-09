@@ -13,6 +13,7 @@
 		084AA9A121387D5B008C508B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084AA99F21387D5B008C508B /* Main.storyboard */; };
 		084AA9A321387D5C008C508B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 084AA9A221387D5C008C508B /* Assets.xcassets */; };
 		084AA9A621387D5C008C508B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084AA9A421387D5C008C508B /* LaunchScreen.storyboard */; };
+		08EB1D10216C83D100A83142 /* FlickrFiles in Resources */ = {isa = PBXBuildFile; fileRef = 08EB1D0F216C83D100A83142 /* FlickrFiles */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		084AA9A221387D5C008C508B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		084AA9A521387D5C008C508B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		084AA9A721387D5C008C508B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08EB1D0F216C83D100A83142 /* FlickrFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FlickrFiles; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				084AA99D21387D5B008C508B /* ViewController.swift */,
 				084AA99F21387D5B008C508B /* Main.storyboard */,
 				08034A73216C256F009A5B10 /* FlickrPhotosViewController.swift */,
+				08EB1D0F216C83D100A83142 /* FlickrFiles */,
 				084AA9A221387D5C008C508B /* Assets.xcassets */,
 				084AA9A421387D5C008C508B /* LaunchScreen.storyboard */,
 				084AA9A721387D5C008C508B /* Info.plist */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				084AA9A621387D5C008C508B /* LaunchScreen.storyboard in Resources */,
+				08EB1D10216C83D100A83142 /* FlickrFiles in Resources */,
 				084AA9A321387D5C008C508B /* Assets.xcassets in Resources */,
 				084AA9A121387D5B008C508B /* Main.storyboard in Resources */,
 			);
