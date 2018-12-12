@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+struct ViewModel {
+    let venues: [Venue]
+    
+    init() {
+        var venues: [Venue] = []
+        self.venues = venues
+    }
+    
+}

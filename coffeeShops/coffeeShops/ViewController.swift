@@ -10,11 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var coffeeShops: [Venue]!
+    var coffeeShops = [Venue]()
+    
+    @IBOutlet weak var venuesTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         downloadJSON()
+        print("CoffeeShops: \(String(describing: coffeeShops))")
     }
 
     func downloadJSON() {
@@ -38,9 +41,8 @@ class ViewController: UIViewController {
             
             do {
                 let venues = try JSONDecoder().decode(VenueAPIResponse.self, from: data)
-//                self.coffeeShops = venues.response.groups[0].items
-//                print(venues.response.groups[0].items)
                 self.coffeeShops = venues.response.groups[0].items.map { $0.venue }
+                print(self.coffeeShops)
 //                for venue in venues.response.groups {
 //                    for item in venue.items {
 //                        print("Each Venue is: \(item.venue)\n")
@@ -55,13 +57,20 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDataSource {
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return coffeeShops.count
+//        return coffeeShops.count
+        print(coffeeShops.count)
+        return 15
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "VenueCell") as? VenueCell  else { return UITableViewCell() }
-
+//        cell.nameLabel.text = coffeeShops[indexPath.row].name
+//        cell.addressLabel.text = coffeeShops[indexPath.row].location.formattedAddress[0]
         return cell
     }
 }
