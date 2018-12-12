@@ -8,6 +8,18 @@
 
 import Foundation
 
+struct Venue: Decodable {
+    let id: String
+    let name: String
+    let location: Location
+    
+    struct Location: Decodable {
+        let lat: Double
+        let lng: Double
+        let formattedAddress: [String]
+    }
+}
+
 struct VenueAPIResponse: Decodable {
     let response: Response
 }
@@ -22,16 +34,4 @@ struct Place: Decodable {
 
 struct Item: Decodable {
     let venue: Venue
-}
-
-struct Venue: Decodable {
-    let id: String
-    let name: String
-    let location: Location
-    
-    struct Location: Decodable {
-        let lat: Double
-        let lng: Double
-        let formattedAddress: [String]
-    }
 }
