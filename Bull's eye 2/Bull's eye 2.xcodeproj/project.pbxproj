@@ -66,6 +66,7 @@
 		08C148D321BE352400189B89 /* BullsEye2UITests */ = {
 			isa = PBXGroup;
 			children = (
+				08C148DF21BE364000189B89 /* ClickButtonUITests.swift */,
 				08C148D421BE352400189B89 /* BullsEye2UITests.swift */,
 				08C148D621BE352400189B89 /* Info.plist */,
 			);
@@ -75,7 +76,6 @@
 		08D9DC5121087F76009BD648 = {
 			isa = PBXGroup;
 			children = (
-				08C148DF21BE364000189B89 /* ClickButtonUITests.swift */,
 				088F9CF921927A2F00BD6DBB /* README.md */,
 				08D9DC5C21087F76009BD648 /* Bull's eye 2 */,
 				08C148D321BE352400189B89 /* BullsEye2UITests */,
