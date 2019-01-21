@@ -1,6 +1,6 @@
 #  Bull's Eye 2
 
-ToDos:
+To Dos:
 * Labels:
     * "Put the Bull's Eye as close as you can to: \(target)"
     * 1, 100 on the scale

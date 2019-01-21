@@ -32,6 +32,7 @@ class AboutViewController: UIViewController {
         closeButton.backgroundColor = .cyan
         closeButton.setTitle("Close", for: .normal)
         closeButton.setTitleColor(.white, for: .normal)
+        
     }
     
     

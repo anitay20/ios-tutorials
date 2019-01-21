@@ -33,10 +33,12 @@ class ViewController: UIViewController {
         print("Points: \(points)")
         
         let title: String
+        var buttonTitle: String = "OK"
         switch difference {
         case 0:
             title = "Perfect"
             points += 100
+            buttonTitle = "Awesome!"
         case 1...5:
             title = "Almost there"
             if difference == 1 {
@@ -54,7 +56,7 @@ class ViewController: UIViewController {
         You scored \(points) points.
         """
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: "OK", style: .default, handler: {
+        let action = UIAlertAction(title: buttonTitle, style: .default, handler: {
             action in
             self.calculateScore()
             self.startNextRound()
@@ -90,7 +92,7 @@ class ViewController: UIViewController {
     func setUpAppearances() {
         backgroundImage?.image = UIImage(named: "background")
         directionLabel.text = "Put the Bull's Eye as close as you can to: "
-        hitMeButton.backgroundColor = .cyan
+        hitMeButton.backgroundColor = .blue
         hitMeButton.setTitleColor(.white, for: .normal)
         hitMeButton.layer.cornerRadius = 5
     }
