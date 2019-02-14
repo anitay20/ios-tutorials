@@ -7,9 +7,9 @@ import Foundation
 
 class Concentration {
 
-    var cards = [Card]()
+    private(set) var cards = [Card]()
     
-    var indexOfOneAndOnlyFaceUpCard: Int?
+    private var indexOfOneAndOnlyFaceUpCard: Int? {
     
     func chooseCard(at index: Int) {
         if !cards[index].isMatched {
@@ -41,7 +41,7 @@ class Concentration {
         shuffleCards()
     }
     
-    func shuffleCards() {
+    private func shuffleCards() {
         var shuffledCards = [Card]()
         
         while !cards.isEmpty{
