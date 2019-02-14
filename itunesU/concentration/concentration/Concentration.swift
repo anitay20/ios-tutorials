@@ -10,6 +10,29 @@ class Concentration {
     private(set) var cards = [Card]()
     
     private var indexOfOneAndOnlyFaceUpCard: Int? {
+        get {
+            // look at all the cards and see if you find only one card that's face up
+            // if so, return it, else return nil
+            var foundIndex: Int?
+            for index in cards.indices {
+                if cards[index].isFaceup {
+                    if foundIndex == nil {
+                        foundIndex = index
+                    } else {
+                        return nil
+                    }
+                }
+            }
+            return foundIndex
+        }
+        
+        set {
+            // turn all the cards face down except the card at index newValue
+            for index in cards.indices {
+                cards[index].isFaceup = (index == newValue)
+            }
+        }
+    }
     
     func chooseCard(at index: Int) {
         assert(cards.indices.contains(index), "Concentration.chooseCard(at: \(index)): chosen index not in the cards.")
@@ -21,13 +44,7 @@ class Concentration {
                     cards[index].isMatched = true
                 }
                 cards[index].isFaceup = true
-                indexOfOneAndOnlyFaceUpCard = nil
             } else {
-                // either no cards or 2 cards are faced up
-                for flipDownIndex in cards.indices {
-                    cards[flipDownIndex].isFaceup = false
-                }
-                cards[index].isFaceup = true
                 indexOfOneAndOnlyFaceUpCard = index
                 
             }
