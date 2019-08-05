@@ -5,7 +5,7 @@
 
 import Foundation
 
-class Concentration {
+struct Concentration {
 
     private(set) var cards = [Card]()
     
@@ -13,17 +13,17 @@ class Concentration {
         get {
             // look at all the cards and see if you find only one card that's face up
             // if so, return it, else return nil
-            var foundIndex: Int?
-            for index in cards.indices {
-                if cards[index].isFaceup {
-                    if foundIndex == nil {
-                        foundIndex = index
-                    } else {
-                        return nil
-                    }
-                }
-            }
-            return foundIndex
+//            var foundIndex: Int?
+//            for index in cards.indices {
+//                if cards[index].isFaceup {
+//                    if foundIndex == nil {
+//                        foundIndex = index
+//                    } else {
+//                        return nil
+//                    }
+//                }
+//            }
+//            return foundIndex
         }
         
         set {
@@ -34,12 +34,12 @@ class Concentration {
         }
     }
     
-    func chooseCard(at index: Int) {
+    mutating func chooseCard(at index: Int) {
         assert(cards.indices.contains(index), "Concentration.chooseCard(at: \(index)): chosen index not in the cards.")
         if !cards[index].isMatched {
             if let matchIndex = indexOfOneAndOnlyFaceUpCard, matchIndex != index {
                 // check if cards match
-                if cards[matchIndex].identifier == cards[index].identifier {
+                if cards[matchIndex] == cards[index] {
                     cards[matchIndex].isMatched = true
                     cards[index].isMatched = true
                 }
@@ -60,7 +60,7 @@ class Concentration {
         shuffleCards()
     }
     
-    private func shuffleCards() {
+    private mutating func shuffleCards() {
         var shuffledCards = [Card]()
         
         while !cards.isEmpty{
