@@ -92,9 +92,12 @@ class ViewController: UIViewController {
     func setUpAppearances() {
         backgroundImage?.image = UIImage(named: "background")
         directionLabel.text = "Put the Bull's Eye as close as you can to: "
+        
         hitMeButton.backgroundColor = .blue
         hitMeButton.setTitleColor(.white, for: .normal)
         hitMeButton.layer.cornerRadius = 5
+        
+        
     }
     
     func updateLabels() {
