@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import WebKit
 
 class AboutViewController: UIViewController {
     
@@ -19,21 +20,20 @@ class AboutViewController: UIViewController {
     }
 
     func setupAppearances() {
-        aboutText.font = UIFont(name: "System", size: 14.0)
+        aboutText.font = UIFont(name: "Arial Rounded MT Bold", size: 17.0)
         aboutText.isEditable = false
-        aboutText.textColor = .black
+        aboutText.textColor = .white
         aboutText.text = """
-        Bull's Eye
+        *** Bull's Eye ***
         
-        Slide to the target value.
-        Press on Hit Me! to guess
+        Welcome to the awesome game of Bull's Eye where you can win points and fame by dragging a slider.
+        
+        Your goal is to place the slider as close as possible to the target value. The closer you are, the more points you score. Enjoy!
         """
         
-        closeButton.backgroundColor = .cyan
         closeButton.setTitle("Close", for: .normal)
-        closeButton.setTitleColor(.white, for: .normal)
-        
+        let buttonTextColor = UIColor(red: 0.45, green: 0.16, blue: 0.00, alpha: 1.00)
+        closeButton.setTitleColor(buttonTextColor, for: .normal)
     }
-    
     
 }
