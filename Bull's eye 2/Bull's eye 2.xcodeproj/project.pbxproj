@@ -12,6 +12,8 @@
 		08A37A63214B9F0200EC76FC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08A37A62214B9F0200EC76FC /* Images.xcassets */; };
 		08C148D521BE352400189B89 /* BullsEye2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C148D421BE352400189B89 /* BullsEye2UITests.swift */; };
 		08C148E021BE364000189B89 /* ClickButtonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C148DF21BE364000189B89 /* ClickButtonUITests.swift */; };
+		08C651B12482397200CCCDD7 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 08C651B02482397200CCCDD7 /* BullsEye.html */; };
+		08C651B4248315F700CCCDD7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08C651B3248315F700CCCDD7 /* WebKit.framework */; };
 		08D9DC5E21087F76009BD648 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D9DC5D21087F76009BD648 /* AppDelegate.swift */; };
 		08D9DC6021087F76009BD648 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D9DC5F21087F76009BD648 /* ViewController.swift */; };
 		08D9DC6321087F76009BD648 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08D9DC6121087F76009BD648 /* Main.storyboard */; };
@@ -37,7 +39,9 @@
 		08C148D421BE352400189B89 /* BullsEye2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEye2UITests.swift; sourceTree = "<group>"; };
 		08C148D621BE352400189B89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08C148DF21BE364000189B89 /* ClickButtonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickButtonUITests.swift; sourceTree = "<group>"; };
-		08D9DC5A21087F76009BD648 /* Bull's eye 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bull's eye 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08C651B02482397200CCCDD7 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
+		08C651B3248315F700CCCDD7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		08D9DC5A21087F76009BD648 /* Bull's Eye 2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bull's Eye 2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08D9DC5D21087F76009BD648 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08D9DC5F21087F76009BD648 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		08D9DC6221087F76009BD648 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08C651B4248315F700CCCDD7 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +78,14 @@
 			path = BullsEye2UITests;
 			sourceTree = "<group>";
 		};
+		08C651B2248315F600CCCDD7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08C651B3248315F700CCCDD7 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		08D9DC5121087F76009BD648 = {
 			isa = PBXGroup;
 			children = (
@@ -80,13 +93,14 @@
 				08D9DC5C21087F76009BD648 /* Bull's eye 2 */,
 				08C148D321BE352400189B89 /* BullsEye2UITests */,
 				08D9DC5B21087F76009BD648 /* Products */,
+				08C651B2248315F600CCCDD7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		08D9DC5B21087F76009BD648 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				08D9DC5A21087F76009BD648 /* Bull's eye 2.app */,
+				08D9DC5A21087F76009BD648 /* Bull's Eye 2.app */,
 				08C148D221BE352400189B89 /* BullsEye2UITests.xctest */,
 			);
 			name = Products;
@@ -101,6 +115,7 @@
 				088F9CFA2197B0EB00BD6DBB /* AboutViewController.swift */,
 				08D9DC6121087F76009BD648 /* Main.storyboard */,
 				08D9DC6621087F78009BD648 /* LaunchScreen.storyboard */,
+				08C651B02482397200CCCDD7 /* BullsEye.html */,
 				08D9DC6921087F78009BD648 /* Info.plist */,
 				08A37A62214B9F0200EC76FC /* Images.xcassets */,
 			);
@@ -142,7 +157,7 @@
 			);
 			name = "Bull's eye 2";
 			productName = "Bull's eye 2";
-			productReference = 08D9DC5A21087F76009BD648 /* Bull's eye 2.app */;
+			productReference = 08D9DC5A21087F76009BD648 /* Bull's Eye 2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -157,11 +172,12 @@
 				TargetAttributes = {
 					08C148D121BE352400189B89 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1140;
 						TestTargetID = 08D9DC5921087F76009BD648;
 					};
 					08D9DC5921087F76009BD648 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -200,6 +216,7 @@
 				0878E349219A34840040E63F /* Strings.strings in Resources */,
 				08D9DC6821087F78009BD648 /* LaunchScreen.storyboard in Resources */,
 				08D9DC6321087F76009BD648 /* Main.storyboard in Resources */,
+				08C651B12482397200CCCDD7 /* BullsEye.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +288,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = test.BullsEye2UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Bull's eye 2";
 			};
@@ -292,7 +309,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = test.BullsEye2UITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Bull's eye 2";
 			};
@@ -424,8 +441,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "test.Bull-s-eye-2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PRODUCT_NAME = "Bull's Eye 2";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -442,8 +459,8 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "test.Bull-s-eye-2";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				PRODUCT_NAME = "Bull's Eye 2";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
