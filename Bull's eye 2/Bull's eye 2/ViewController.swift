@@ -83,7 +83,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
         setUpAppearances()
         currentValue = Int(slider.value.rounded())
         resetGame()
@@ -96,8 +96,6 @@ class ViewController: UIViewController {
         hitMeButton.backgroundColor = .blue
         hitMeButton.setTitleColor(.white, for: .normal)
         hitMeButton.layer.cornerRadius = 5
-        
-        
     }
     
     func updateLabels() {
