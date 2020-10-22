@@ -11,35 +11,49 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var expand = false
-    
-    @Namespace private var shapeTransition
+    @State private var swap = false
+    @Namespace private var dotTransition
     
     var body: some View {
-        
-        if expand {
-            
-            // Final State
-            Circle()
-                .fill(Color.green)
-                .matchedGeometryEffect(id: "circle", in: shapeTransition)
-                .frame(width: 300, height: 300)
-                .offset(y: -200)
-                .animation(.default)
-                .onTapGesture {
-                    self.expand.toggle()
-                }
+        if swap {
+            // After swap
+            // Green dot on the left, Orange dot on the right
+            HStack {
+                Circle()
+                    .fill(Color.green)
+                    .frame(width: 30, height: 30)
+                    .matchedGeometryEffect(id: "greenCircle", in: dotTransition)
+                Spacer()
+                
+                Circle()
+                    .fill(Color.orange)
+                    .frame(width: 30, height: 30)
+                    .matchedGeometryEffect(id: "orangeCircle", in: dotTransition)
+            }
+            .frame(width: 100)
+            .animation(.linear)
+            .onTapGesture {
+                swap.toggle()
+            }
         } else {
-            
-            // Start State
-            Circle()
-                .fill(Color.green)
-                .frame(width: expand ? 300 : 150, height: expand ? 300 : 150)
-                .offset(y: expand ? -200 : 0)
-                .animation(.default)
-                .onTapGesture {
-                    self.expand.toggle()
-                }
+            // Start state
+            // Orange dot on the left, Green dot on the right
+            HStack {
+                Circle()
+                    .fill(Color.orange)
+                    .frame(width: 30, height: 30)
+                    .matchedGeometryEffect(id: "orangeCircle", in: dotTransition)
+                Spacer()
+                Circle()
+                    .fill(Color.green)
+                    .frame(width: 30, height: 30)
+                    .matchedGeometryEffect(id: "greenCircle", in: dotTransition)
+            }
+            .frame(width: 100)
+            .animation(.linear)
+            .onTapGesture {
+                swap.toggle()
+            }
         }
     }
 }
