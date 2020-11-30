@@ -1,5 +1,5 @@
 import UIKit
-
+/*
 var str = "Hello, playground"
 
 func isWeird(n: Int) -> Void {
@@ -285,3 +285,45 @@ print(words.filter { $0 != ""})
 
 print(words.isEmpty)
 
+
+func runningSum(_ nums: [Int]) -> [Int] {
+    var arr = [Int]()
+    var sum = 0
+    for num in nums {
+        arr.append(sum + num)
+        sum += num
+    }
+    return arr
+}
+
+let nums = [1,2,3,4]
+runningSum(nums)
+
+
+let candies = [12,1,12]
+let extraCandies = 10
+func kidsWithCandies(_ candies: [Int], _ extraCandies: Int) -> [Bool] {
+//    let maxCandies = candies.max()!
+    return candies.map {$0 + extraCandies > candies.max()!}
+}
+
+func kidsWithCandies2(_ candies: [Int], _ extraCandies: Int) -> [Bool] {
+    var max = 0
+    var result = [Bool]()
+    for candy in candies {
+        if candy > max {
+            max = candy
+        }
+    }
+    for candy in candies {
+        result.append(candy + extraCandies >= max)
+    }
+    return result
+}
+
+//print(candies.max()!)
+kidsWithCandies(candies, extraCandies)
+
+*/
+
+NSCharacterSet

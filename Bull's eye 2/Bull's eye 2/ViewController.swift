@@ -9,8 +9,8 @@ class ViewController: UIViewController {
 
     @IBOutlet var backgroundImage: UIImageView!
     @IBAction func resetButton(_ sender: UIButton) {
-        let title = "Start over"
-        let message = "Are you sure you want to start your game over?"
+        let title = "Reset"
+        let message = "Are you sure you want to reset the game?"
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let yesAction = UIAlertAction(title: "Yes", style: .default, handler: {
             action in
@@ -83,7 +83,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
         setUpAppearances()
         currentValue = Int(slider.value.rounded())
         resetGame()
@@ -93,20 +93,9 @@ class ViewController: UIViewController {
         backgroundImage?.image = UIImage(named: "background")
         directionLabel.text = "Put the Bull's Eye as close as you can to: "
         
-        let thumbImageNormal = #imageLiteral(resourceName: "SliderThumb-Normal")
-        slider.setThumbImage(thumbImageNormal, for: .normal)
-        let thumbImageHighlighted = #imageLiteral(resourceName: "SliderThumb-Highlighted")
-        slider.setThumbImage(thumbImageHighlighted, for: .highlighted)
-        
-        let insets = UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
-        
-        let trackLeftImage = #imageLiteral(resourceName: "SliderTrackLeft")
-        let trackLeftResizable = trackLeftImage.resizableImage(withCapInsets: insets)
-        slider.setMinimumTrackImage(trackLeftResizable, for: .normal)
-        
-        let trackRightImage = #imageLiteral(resourceName: "SliderTrackRight")
-        let trackRightResizable = trackRightImage.resizableImage(withCapInsets: insets)
-        slider.setMaximumTrackImage(trackRightResizable, for: .normal)
+        hitMeButton.backgroundColor = .blue
+        hitMeButton.setTitleColor(.white, for: .normal)
+        hitMeButton.layer.cornerRadius = 5
     }
     
     func updateLabels() {
