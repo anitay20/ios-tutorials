@@ -13,31 +13,27 @@ struct ContentView: View {
     @Namespace private var photoTransition
     
     var body: some View {
-        /*
-        Image("coffees")
-            .resizable()
-            .frame(width: 150, height: 230)
-        */
+        
         if swap {
-            Image("coffees")
-                .resizable()
-                .frame(width: 130, height: 200)
-                .matchedGeometryEffect(id: "coffees", in: photoTransition)
-                .frame(width: 100)
-                .animation(.linear)
-            Image("leftRightArrows")
-                .resizable()
-                .frame(width: 30, height: 30)
-                .onTapGesture{
-                    swap.toggle()
-                }
-            Image("cupOfCoffee")
-                .resizable()
-                .frame(width: 130, height: 200)
-                .matchedGeometryEffect(id: "cupOfCoffee", in: photoTransition)
-                .frame(width: 100)
-                .animation(.linear)
-            
+            HStack {
+                Image("coffees")
+                    .resizable()
+                    .frame(width: 130, height: 200)
+                    .matchedGeometryEffect(id: "coffees", in: photoTransition)
+                    .animation(.linear)
+                Image("leftRightArrows")
+                    .resizable()
+                    .frame(width: 30, height: 30)
+                    .onTapGesture{
+                        swap.toggle()
+                    }
+                Image("cupOfCoffee")
+                    .resizable()
+                    .frame(width: 130, height: 200)
+                    .matchedGeometryEffect(id: "cupOfCoffee", in: photoTransition)
+//                    .animation(.linear)
+            }
+            .animation(.linear)
         } else {
             HStack {
                 Image("cupOfCoffee")
@@ -54,8 +50,7 @@ struct ContentView: View {
                     .resizable()
                     .frame(width: 130, height: 200)
                     .matchedGeometryEffect(id: "coffees", in: photoTransition)
-            }
-            .frame(width: 100)
+            }   
             .animation(.linear)
         }
     }
