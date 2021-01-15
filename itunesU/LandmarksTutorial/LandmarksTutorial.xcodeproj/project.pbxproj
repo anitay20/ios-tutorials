@@ -19,6 +19,7 @@
 		08E7E6CD25B17F220076DB14 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E7E6CC25B17F220076DB14 /* Landmark.swift */; };
 		08E7E6D125B181610076DB14 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E7E6D025B181610076DB14 /* ModelData.swift */; };
 		08E7E6DB25B183540076DB14 /* LandmarkRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E7E6DA25B183540076DB14 /* LandmarkRow.swift */; };
+		08E7E6DE25B192370076DB14 /* LandmarkList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E7E6DD25B192370076DB14 /* LandmarkList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		08E7E6CC25B17F220076DB14 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
 		08E7E6D025B181610076DB14 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		08E7E6DA25B183540076DB14 /* LandmarkRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkRow.swift; sourceTree = "<group>"; };
+		08E7E6DD25B192370076DB14 /* LandmarkList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				086CAF6F258A85570013AC7C /* CircleImage.swift */,
 				086CAF74258A886C0013AC7C /* MapView.swift */,
 				08E7E6DA25B183540076DB14 /* LandmarkRow.swift */,
+				08E7E6DD25B192370076DB14 /* LandmarkList.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				086CAF70258A85570013AC7C /* CircleImage.swift in Sources */,
 				086CAF75258A886C0013AC7C /* MapView.swift in Sources */,
 				0872FDB222A7CD9E00F743BB /* SceneDelegate.swift in Sources */,
+				08E7E6DE25B192370076DB14 /* LandmarkList.swift in Sources */,
 				0872FDB422A7CD9E00F743BB /* ContentView.swift in Sources */,
 				08E7E6CD25B17F220076DB14 /* Landmark.swift in Sources */,
 				08E7E6DB25B183540076DB14 /* LandmarkRow.swift in Sources */,
