@@ -20,7 +20,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.text = nil
     }
 
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         performAction()
         return true
