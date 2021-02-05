@@ -9,6 +9,8 @@
 import SwiftUI
 
 struct BadgeSymbol: View {
+    static  let symbolColor = Color(red: 79.0 / 255, green: 29.0 / 255, blue: 191.0 / 255)
+    
     var body: some View {
         GeometryReader { geometry in
             Path { path in
@@ -21,12 +23,23 @@ struct BadgeSymbol: View {
                 
                 path.addLines([
                     CGPoint(x: middle, y: spacing),
-//                    CGPoint(x: middle - topWidth, y : topHeight - spacing),
+                    CGPoint(x: middle - topWidth, y : topHeight - spacing),
                     CGPoint(x: middle, y: topHeight / 2 + spacing),
                     CGPoint(x: middle + topWidth, y: topHeight - spacing),
-//                    CGPoint(x: middle, y: spacing)
+                    CGPoint(x: middle, y: spacing)
+                ])
+            
+                path.move(to: CGPoint(x: middle, y: topHeight / 2 + spacing * 2))
+                
+                path.addLines([
+                    CGPoint(x: middle - topWidth, y: topHeight + spacing),
+                    CGPoint(x: spacing, y: height - spacing),
+                    CGPoint(x: width - spacing, y: height - spacing),
+                    CGPoint(x: middle + topWidth, y: topHeight + spacing),
+                    CGPoint(x: middle, y: topHeight / 2 + spacing * 3)
                 ])
             }
+            .fill(Self.symbolColor)
         }
     }
 }
