@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-@main
+//@main
 struct LandmarksApp: App {
     @StateObject private var modelData = ModelData()
     var body: some Scene {
