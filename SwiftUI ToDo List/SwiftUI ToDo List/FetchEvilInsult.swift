@@ -22,7 +22,7 @@ import Foundation
 
 class FetchEvilInsult: ObservableObject {
     
-    @Published var insult: String
+    @Published var insult: String = ""
     
     init() {
         let url = URL(string: "https://evilinsult.com/generate_insult.php?lang=en&type=json")!
@@ -42,4 +42,15 @@ class FetchEvilInsult: ObservableObject {
             }
         }.resume()
     }
+}
+
+struct Insult: Decodable {
+    let number: Int
+    let language: String
+    let insult: String
+    let created: String
+    let shown: Int
+    let createdBy: String
+    let active: Int
+    let comment: String
 }

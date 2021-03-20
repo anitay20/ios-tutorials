@@ -13,6 +13,7 @@
 		087B650425F835C700D217AA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 087B650325F835C700D217AA /* Preview Assets.xcassets */; };
 		087B650D25F8366400D217AA /* FetchToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087B650C25F8366400D217AA /* FetchToDo.swift */; };
 		087B651225F96F4E00D217AA /* FetchEvilInsult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 087B651125F96F4E00D217AA /* FetchEvilInsult.swift */; };
+		08BB308026056E8F0056E1CD /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08BB307F26056E8F0056E1CD /* Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		087B650525F835C700D217AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		087B650C25F8366400D217AA /* FetchToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchToDo.swift; sourceTree = "<group>"; };
 		087B651125F96F4E00D217AA /* FetchEvilInsult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchEvilInsult.swift; sourceTree = "<group>"; };
+		08BB307F26056E8F0056E1CD /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				087B64FC25F835C400D217AA /* SwiftUI_ToDo_ListApp.swift */,
 				087B64FE25F835C400D217AA /* ContentView.swift */,
 				087B651125F96F4E00D217AA /* FetchEvilInsult.swift */,
+				08BB307F26056E8F0056E1CD /* Networking.swift */,
 				087B650C25F8366400D217AA /* FetchToDo.swift */,
 				087B650025F835C700D217AA /* Assets.xcassets */,
 				087B650525F835C700D217AA /* Info.plist */,
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				087B650D25F8366400D217AA /* FetchToDo.swift in Sources */,
+				08BB308026056E8F0056E1CD /* Networking.swift in Sources */,
 				087B651225F96F4E00D217AA /* FetchEvilInsult.swift in Sources */,
 				087B64FF25F835C400D217AA /* ContentView.swift in Sources */,
 				087B64FD25F835C400D217AA /* SwiftUI_ToDo_ListApp.swift in Sources */,
