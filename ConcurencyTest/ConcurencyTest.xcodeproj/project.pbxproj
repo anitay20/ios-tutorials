@@ -11,6 +11,7 @@
 		08B29287260A8E1100F7297C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B29286260A8E1100F7297C /* ContentView.swift */; };
 		08B29289260A8E1300F7297C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B29288260A8E1300F7297C /* Assets.xcassets */; };
 		08B2928C260A8E1300F7297C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B2928B260A8E1300F7297C /* Preview Assets.xcassets */; };
+		08B2929626151FCA00F7297C /* CalculatePrimeOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B2929526151FCA00F7297C /* CalculatePrimeOperation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		08B29288260A8E1300F7297C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08B2928B260A8E1300F7297C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		08B2928D260A8E1300F7297C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08B2929526151FCA00F7297C /* CalculatePrimeOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatePrimeOperation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				08B29284260A8E1100F7297C /* ConcurencyTestApp.swift */,
 				08B29286260A8E1100F7297C /* ContentView.swift */,
+				08B2929526151FCA00F7297C /* CalculatePrimeOperation.swift */,
 				08B29288260A8E1300F7297C /* Assets.xcassets */,
 				08B2928D260A8E1300F7297C /* Info.plist */,
 				08B2928A260A8E1300F7297C /* Preview Content */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08B29287260A8E1100F7297C /* ContentView.swift in Sources */,
+				08B2929626151FCA00F7297C /* CalculatePrimeOperation.swift in Sources */,
 				08B29285260A8E1100F7297C /* ConcurencyTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
